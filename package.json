@@ -1,0 +1,19 @@
+{
+    "name": "node-typescript-starter",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc --build --incremental",
+        "clean": "tsc --build --clean && rm -rf ./dist/",
+        "prepublishOnly": "yarn clean && yarn build",
+        "watch": "tsc --build --incremental --watch"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "jest": "^24.9.0",
+        "prettier": "^1.19.1",
+        "typescript": "^3.7.5"
+    }
+}
