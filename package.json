@@ -8,9 +8,12 @@
         "build": "tsc --build --incremental",
         "clean": "tsc --build --clean && rm -rf ./dist/",
         "prepublishOnly": "yarn clean && yarn build",
+        "test": "jest",
         "watch": "tsc --build --incremental --watch"
     },
     "devDependencies": {
+        "@nimashoghi/eslint-config": "^0.0.7",
+        "@types/jest": "^24.9.0",
         "eslint": "^6.8.0",
         "jest": "^24.9.0",
         "prettier": "^1.19.1",
